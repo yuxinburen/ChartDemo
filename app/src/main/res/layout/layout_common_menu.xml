@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/personal_dark_divider"-->
+            <!--android:contentDescription="@string/app_name" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="#3399FF"
+                android:textSize="17sp"
+                android:text="取消"
+                android:visibility="gone"
+                android:background="@drawable/background_item_common_menu_left"
+                />
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="#3399FF"
+                android:text="确定"
+                android:visibility="gone"
+                android:background="@drawable/background_item_common_menu_right"
+                />
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#22000000"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <com.chartdemo.ui.wheelview.WheelView
+                android:id="@+id/layout_common_menu_wheelView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.chartdemo.ui.wheelview.WheelView
+                android:id="@+id/layout_common_menu_wheelView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.chartdemo.ui.wheelview.WheelView
+                android:id="@+id/layout_common_menu_wheelView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.chartdemo.ui.wheelview.WheelView
+                android:id="@+id/layout_common_menu_wheelView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.chartdemo.ui.wheelview.WheelView
+                android:id="@+id/layout_common_menu_wheelView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <!--<com.ufstone.anhao.widget.WheelView-->
+                <!--android:id="@+id/layout_common_menu_wheelView6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="gone" />-->
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

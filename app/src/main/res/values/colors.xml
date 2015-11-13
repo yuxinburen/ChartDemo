@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_blood_presure">#45CB00</color>
+    <color name="color_blood_sugar">#DACB00</color>
+    <color name="color_insulin">#45BBFF</color>
+    <color name="color_heart">#FF2222</color>
+    <color name="color_step">#EE2299</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
