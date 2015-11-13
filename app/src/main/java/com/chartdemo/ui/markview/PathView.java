@@ -38,7 +38,7 @@ public class PathView extends View {
         super(context);
         mPath.addCircle(RADIUS, RADIUS, RADIUS, Path.Direction.CW);
         matrix.setScale(FACTOR, FACTOR);
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.shape_background_circle);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.show);
     }
 
     public PathView(Context context, AttributeSet attrs) {

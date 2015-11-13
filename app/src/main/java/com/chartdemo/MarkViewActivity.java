@@ -2,7 +2,6 @@ package com.chartdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.chartdemo.ui.markview.MarkView;
@@ -14,15 +13,15 @@ public class MarkViewActivity extends ActionBarActivity implements MarkView.OnVa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mark_view);
+        setContentView(new PathView(this));
 
-        MarkView markView = ((MarkView) findViewById(R.id.mk_view1));
-        markView.setValueChangeListener(this);
+//        MarkView markView = ((MarkView) findViewById(R.id.mk_view1));
+//        markView.setValueChangeListener(this);
+//
+//        PathView pathView = new PathView(this);
+//        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(100, 200);
+//        pathView.setLayoutParams(params);
 
-        PathView pathView = new PathView(this);
-        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(100, 200);
-        pathView.setLayoutParams(params);
-        
     }
 
     @Override
